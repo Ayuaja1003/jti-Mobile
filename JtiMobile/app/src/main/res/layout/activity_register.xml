@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.RegisterActivity">
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Registrasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+        android:paddingHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_full_name"
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:hint="Masukkan Nama Lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:hint="Masukkan Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:hint="Masukkan Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+        <EditText
+            android:id="@+id/et_birthdate"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:hint="Masukkan Tanggal Lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="Jenis Kelamin :"
+            android:id="@+id/selection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true">
+        </Spinner>
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:hint="Masukkan Alamat Lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Register"
+        android:layout_width="150dp"
+        android:layout_height="70dp">
+    </Button>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Sudah memiliki akun, yuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_marginLeft="10dp"
+            android:textColor="#2197F4"
+            android:textSize="15dp"
+            android:text="login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
